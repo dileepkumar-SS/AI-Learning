@@ -1,0 +1,12 @@
+{"question": "How do I authenticate the SDK client?", "known_correct_chunk_id": "v3.2.0:auth-guide:api-key-login"}
+{"question": "What is the default for retry_backoff_ms in v3.2.0?", "known_correct_chunk_id": "v3.2.0:client-send-v3:parameters"}
+{"question": "Which Client.send parameter is required?", "known_correct_chunk_id": "v3.2.0:client-send-v3:parameters"}
+{"question": "Show the Client.send code sample using retry_backoff_ms.", "known_correct_chunk_id": "v3.2.0:client-send-v3:example"}
+{"question": "What is the default event_buffer value?", "known_correct_chunk_id": "v3.2.0:client-stream-v3:parameters"}
+{"question": "What default purpose does Files.upload use?", "known_correct_chunk_id": "v3.2.0:files-upload-v3:parameters"}
+{"question": "Which embedding model is the default in v3.2.0?", "known_correct_chunk_id": "v3.2.0:embeddings-create-v3:parameters"}
+{"question": "What is the default max_output_tokens?", "known_correct_chunk_id": "v3.2.0:responses-create-v3:parameters"}
+{"question": "What does ERR-4032 mean?", "known_correct_chunk_id": "v3.2.0:responses-create-v3:errors"}
+{"question": "What is the default tool_choice on Runs.create?", "known_correct_chunk_id": "v3.2.0:runs-create-v3:parameters"}
+{"question": "What changed in version v3.2.0 for Client.send retry behavior?", "known_correct_chunk_id": "v3.2.0:changelog-v3-2:changes"}
+{"question": "What is the monthly quota for Client.send?", "known_correct_chunk_id": "NOT_IN_CORPUS"}
