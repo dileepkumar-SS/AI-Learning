@@ -1,0 +1,4 @@
+{
+  "Client.send_legacy": "Migrate to Client.send and pass timeout_ms explicitly.",
+  "Responses.generate": "Migrate to Responses.create."
+}

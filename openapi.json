@@ -1,0 +1,10 @@
+{
+  "openapi": "3.1.0",
+  "info": {"title": "Example Docs API", "version": "3.2.0"},
+  "paths": {
+    "/v3/responses": {},
+    "/v3/files": {},
+    "/v3/runs": {},
+    "/v3/embeddings": {}
+  }
+}

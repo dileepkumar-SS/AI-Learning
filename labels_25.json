@@ -1,0 +1,35 @@
+{
+  "protocol": {
+    "labeler": "manual blind review",
+    "labeled_at_utc": "2026-09-29T04:27:59Z",
+    "blind_to_judge_outputs": true,
+    "criterion": "PASS only when the answer directly resolves the question with the correct factual substance; citation, syntax, endpoint, version-statement, and deprecation checks are handled separately by deterministic assertions."
+  },
+  "labels": [
+    {"case_id": "eval_001", "trace_id": "tr_0001", "label": "PASS", "rationale": "Directly gives the required authentication setup."},
+    {"case_id": "eval_002", "trace_id": "tr_0002", "label": "FAIL", "rationale": "Points to older defaults instead of answering with the requested value."},
+    {"case_id": "eval_003", "trace_id": "tr_0003", "label": "FAIL", "rationale": "Does not provide the requested timeout argument."},
+    {"case_id": "eval_004", "trace_id": "tr_0004", "label": "PASS", "rationale": "States the requested default."},
+    {"case_id": "eval_005", "trace_id": "tr_0005", "label": "FAIL", "rationale": "Invents a quota that the docs do not state."},
+    {"case_id": "eval_006", "trace_id": "tr_0006", "label": "FAIL", "rationale": "Gives generic handling advice instead of the error meaning."},
+    {"case_id": "eval_007", "trace_id": "tr_0007", "label": "PASS", "rationale": "States the requested default."},
+    {"case_id": "eval_008", "trace_id": "tr_0008", "label": "PASS", "rationale": "Correctly names the default embedding model."},
+    {"case_id": "eval_009", "trace_id": "tr_0009", "label": "FAIL", "rationale": "Does not say whether validation errors are retried."},
+    {"case_id": "eval_010", "trace_id": "tr_0010", "label": "PASS", "rationale": "States the requested default."},
+    {"case_id": "eval_011", "trace_id": "tr_0011", "label": "PASS", "rationale": "Directly states the versioned change."},
+    {"case_id": "eval_012", "trace_id": "tr_0012", "label": "FAIL", "rationale": "Does not provide the requested default."},
+    {"case_id": "eval_013", "trace_id": "tr_0013", "label": "FAIL", "rationale": "Points to older defaults instead of answering."},
+    {"case_id": "eval_014", "trace_id": "tr_0014", "label": "PASS", "rationale": "Directly answers how unknown codes should be handled."},
+    {"case_id": "eval_015", "trace_id": "tr_0015", "label": "FAIL", "rationale": "Invents a different quota rather than answering from the docs."},
+    {"case_id": "eval_016", "trace_id": "tr_0016", "label": "FAIL", "rationale": "Does not name the required parameter."},
+    {"case_id": "eval_017", "trace_id": "tr_0017", "label": "PASS", "rationale": "Correctly states the requested default."},
+    {"case_id": "eval_018", "trace_id": "tr_0018", "label": "PASS", "rationale": "Provides the requested Python usage."},
+    {"case_id": "eval_019", "trace_id": "tr_0019", "label": "FAIL", "rationale": "Invents an unrelated quota."},
+    {"case_id": "eval_020", "trace_id": "tr_0020", "label": "PASS", "rationale": "Directly defines the upload parameter."},
+    {"case_id": "eval_021", "trace_id": "tr_0021", "label": "FAIL", "rationale": "Does not answer which unit the symbol uses."},
+    {"case_id": "eval_022", "trace_id": "tr_0022", "label": "PASS", "rationale": "Directly explains the error code."},
+    {"case_id": "eval_023", "trace_id": "tr_0023", "label": "FAIL", "rationale": "Does not provide the requested timeout."},
+    {"case_id": "eval_024", "trace_id": "tr_0024", "label": "FAIL", "rationale": "Invents an unrelated quota rather than addressing S3."},
+    {"case_id": "eval_025", "trace_id": "tr_0025", "label": "FAIL", "rationale": "Does not provide the requested default."}
+  ]
+}
