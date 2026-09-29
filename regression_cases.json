@@ -1,0 +1,18 @@
+[
+  {
+    "case_id": "eval_002",
+    "trace_id": "tr_0002",
+    "source": "Week 5 real failed trace replayed verbatim",
+    "question": "What is retry_backoff_ms in v3.2.0?",
+    "answer": "Use the older Client.send defaults from the v2 reference.",
+    "failure_mode": "wrong_version"
+  },
+  {
+    "case_id": "eval_023",
+    "trace_id": "tr_0023",
+    "source": "Week 5 real failed trace replayed verbatim",
+    "question": "What timeout should I expect on v3 Client.send?",
+    "answer": "Use the older Client.send defaults from the v2 reference.",
+    "failure_mode": "wrong_version"
+  }
+]

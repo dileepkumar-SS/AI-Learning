@@ -1,0 +1,14 @@
+{
+  "judge": "recorded-llm-run-v2",
+  "provenance": "Codex LLM review recorded in this task session after prompt iteration",
+  "run_at_utc": "2026-09-29T04:32:00Z",
+  "prompt_file": "judge_v2.txt",
+  "few_shot_case_ids": ["eval_008", "eval_017"],
+  "verdicts": {
+    "eval_001": "PASS", "eval_002": "FAIL", "eval_003": "FAIL", "eval_004": "PASS", "eval_005": "FAIL",
+    "eval_006": "FAIL", "eval_007": "PASS", "eval_008": "PASS", "eval_009": "FAIL", "eval_010": "PASS",
+    "eval_011": "PASS", "eval_012": "FAIL", "eval_013": "FAIL", "eval_014": "PASS", "eval_015": "FAIL",
+    "eval_016": "FAIL", "eval_017": "PASS", "eval_018": "PASS", "eval_019": "FAIL", "eval_020": "PASS",
+    "eval_021": "FAIL", "eval_022": "PASS", "eval_023": "FAIL", "eval_024": "FAIL", "eval_025": "FAIL"
+  }
+}
