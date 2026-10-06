@@ -1,0 +1,2 @@
+iteration=1 action={"api_version": "v3", "query": "Migrate deprecated Responses.generate in v3.", "tool": "search_docs"}
+TERMINATED budget=max_iterations iterations=1 tokens=46 cost=$0.000019

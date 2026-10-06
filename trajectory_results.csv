@@ -1,0 +1,21 @@
+phase,case_id,outcome_pass,trajectory_pass,sequence,arguments_valid,failure_mode,steps,cost_usd,latency_ms
+before,q01,True,False,search_docs,True,missing_required_tool,1,0.00006570,2.200
+before,q02,True,True,search_docs -> get_openapi_spec,True,none,2,0.00010815,3.300
+before,q03,True,False,search_docs -> check_deprecation -> get_openapi_spec,True,wrong_tool,3,0.00013920,4.200
+before,q04,True,False,search_docs -> get_openapi_spec,False,invalid_argument,2,0.00010815,3.300
+before,q05,True,True,search_docs -> get_openapi_spec -> check_deprecation,True,none,3,0.00013920,4.200
+before,q06,True,True,search_docs -> check_deprecation -> get_openapi_spec,True,none,3,0.00013920,4.200
+before,q07,True,False,search_docs -> get_openapi_spec -> check_deprecation -> check_deprecation,True,redundant_step,4,0.00017025,5.100
+before,q08,True,True,search_docs -> get_openapi_spec,True,none,2,0.00010815,3.300
+before,q09,True,False,search_docs,True,missing_required_tool,1,0.00006570,2.200
+before,q10,True,False,search_docs,True,missing_required_tool,1,0.00006570,2.200
+after,q01,True,True,search_docs -> get_openapi_spec,True,none,2,0.00010815,3.300
+after,q02,True,True,search_docs -> get_openapi_spec,True,none,2,0.00010815,3.300
+after,q03,True,False,search_docs -> check_deprecation -> get_openapi_spec,True,wrong_tool,3,0.00013920,4.200
+after,q04,True,False,search_docs -> get_openapi_spec,False,invalid_argument,2,0.00010815,3.300
+after,q05,True,True,search_docs -> get_openapi_spec -> check_deprecation,True,none,3,0.00013920,4.200
+after,q06,True,True,search_docs -> check_deprecation -> get_openapi_spec,True,none,3,0.00013920,4.200
+after,q07,True,False,search_docs -> get_openapi_spec -> check_deprecation -> check_deprecation,True,redundant_step,4,0.00017025,5.100
+after,q08,True,True,search_docs -> get_openapi_spec,True,none,2,0.00010815,3.300
+after,q09,True,True,search_docs -> get_openapi_spec,True,none,2,0.00010815,3.300
+after,q10,True,True,search_docs -> get_openapi_spec,True,none,2,0.00010815,3.300
