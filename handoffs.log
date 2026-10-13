@@ -1,0 +1,50 @@
+case_id	sender -> receiver	purpose	tokens
+tr_0001	orchestrator -> version-worker	question + docs context	159
+tr_0001	version-worker -> orchestrator	version/deprecation result	60
+tr_0001	orchestrator -> code-sample-worker	question + full version result + output contract	322
+tr_0001	code-sample-worker -> orchestrator	draft answer	72
+tr_0002	orchestrator -> version-worker	question + docs context	159
+tr_0002	version-worker -> orchestrator	version/deprecation result	62
+tr_0002	orchestrator -> code-sample-worker	question + full version result + output contract	324
+tr_0002	code-sample-worker -> orchestrator	draft answer	74
+tr_0003	orchestrator -> version-worker	question + docs context	159
+tr_0003	version-worker -> orchestrator	version/deprecation result	60
+tr_0003	orchestrator -> code-sample-worker	question + full version result + output contract	322
+tr_0003	code-sample-worker -> orchestrator	draft answer	72
+tr_0004	orchestrator -> version-worker	question + docs context	161
+tr_0004	version-worker -> orchestrator	version/deprecation result	62
+tr_0004	orchestrator -> code-sample-worker	question + full version result + output contract	326
+tr_0004	code-sample-worker -> orchestrator	draft answer	74
+tr_0005	orchestrator -> version-worker	question + docs context	161
+tr_0005	version-worker -> orchestrator	version/deprecation result	60
+tr_0005	orchestrator -> code-sample-worker	question + full version result + output contract	324
+tr_0005	code-sample-worker -> orchestrator	draft answer	72
+tr_0006	orchestrator -> version-worker	question + docs context	156
+tr_0006	version-worker -> orchestrator	version/deprecation result	62
+tr_0006	orchestrator -> code-sample-worker	question + full version result + output contract	321
+tr_0006	code-sample-worker -> orchestrator	draft answer	74
+tr_0007	orchestrator -> version-worker	question + docs context	158
+tr_0007	version-worker -> orchestrator	version/deprecation result	58
+tr_0007	orchestrator -> code-sample-worker	question + full version result + output contract	319
+tr_0007	code-sample-worker -> orchestrator	draft answer	70
+tr_0008	orchestrator -> version-worker	question + docs context	161
+tr_0008	version-worker -> orchestrator	version/deprecation result	64
+tr_0008	orchestrator -> code-sample-worker	question + full version result + output contract	328
+tr_0008	code-sample-worker -> orchestrator	draft answer	76
+tr_0009	orchestrator -> version-worker	question + docs context	161
+tr_0009	version-worker -> orchestrator	version/deprecation result	61
+tr_0009	orchestrator -> code-sample-worker	question + full version result + output contract	325
+tr_0009	code-sample-worker -> orchestrator	draft answer	73
+tr_0010	orchestrator -> version-worker	question + docs context	157
+tr_0010	version-worker -> orchestrator	version/deprecation result	58
+tr_0010	orchestrator -> code-sample-worker	question + full version result + output contract	318
+tr_0010	code-sample-worker -> orchestrator	draft answer	70
+
+aggregate hand-off token totals:
+code-sample-worker -> orchestrator: 727
+orchestrator -> code-sample-worker: 3229
+orchestrator -> version-worker: 1592
+version-worker -> orchestrator: 607
+
+Context re-send multiplier: 11114 / 2489 = 4.5x.
+Largest hand-off: orchestrator -> code-sample-worker resend, 3229 tokens = 29.1% of all multi-agent tokens.

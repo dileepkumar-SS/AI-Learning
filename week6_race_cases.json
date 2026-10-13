@@ -1,0 +1,15 @@
+{
+  "provenance": "Verbatim questions and expected answers from week6-task:traces.jsonl, records tr_0001 through tr_0010.",
+  "cases": [
+    {"case_id": "tr_0001", "question": "How do I authenticate the v3 client?", "expected_answer": "Set SDK_API_KEY before creating Client()."},
+    {"case_id": "tr_0002", "question": "What is retry_backoff_ms in v3.2.0?", "expected_answer": "retry_backoff_ms defaults to 250 ms in v3.2.0."},
+    {"case_id": "tr_0003", "question": "Show Client.send with timeout_ms.", "expected_answer": "Pass timeout_ms=30000 to Client.send."},
+    {"case_id": "tr_0004", "question": "What is the default Files.upload purpose?", "expected_answer": "Files.upload defaults purpose to assistants."},
+    {"case_id": "tr_0005", "question": "What is the monthly quota for Client.send?", "expected_answer": "The docs do not state a monthly quota."},
+    {"case_id": "tr_0006", "question": "What does ERR-4032 mean?", "expected_answer": "ERR-4032 means unsafe tool output was blocked."},
+    {"case_id": "tr_0007", "question": "What is event_buffer default?", "expected_answer": "event_buffer defaults to true."},
+    {"case_id": "tr_0008", "question": "Which embedding model is default in v3.2.0?", "expected_answer": "The default embedding model is text-embedding-3-small."},
+    {"case_id": "tr_0009", "question": "Does Client.send retry validation errors?", "expected_answer": "Do not retry permanent validation errors."},
+    {"case_id": "tr_0010", "question": "What is tool_choice default?", "expected_answer": "tool_choice defaults to auto."}
+  ]
+}

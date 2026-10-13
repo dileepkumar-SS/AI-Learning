@@ -1,0 +1,142 @@
+{
+  "transport": "stdio, one JSON-RPC object per line",
+  "exchange": [
+    {
+      "phase": "initialize",
+      "request_raw": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "initialize",
+        "params": {}
+      },
+      "request_top_level_annotations": {
+        "jsonrpc": "Protocol version marker; JSON-RPC 2.0 requires the literal '2.0'.",
+        "id": "Correlation identifier pairing this response with its request.",
+        "method": "MCP operation requested from the server.",
+        "params": "Arguments supplied to the MCP operation."
+      },
+      "response_raw": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": {
+          "protocolVersion": "2025-06-18",
+          "capabilities": {
+            "tools": {}
+          },
+          "serverInfo": {
+            "name": "package-registry",
+            "version": "1.0.0"
+          }
+        }
+      },
+      "response_top_level_annotations": {
+        "jsonrpc": "Protocol version marker; JSON-RPC 2.0 requires the literal '2.0'.",
+        "id": "Correlation identifier pairing this response with its request.",
+        "result": "Successful JSON-RPC result payload returned by the server."
+      }
+    },
+    {
+      "phase": "tools/list",
+      "request_raw": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/list",
+        "params": {}
+      },
+      "request_top_level_annotations": {
+        "jsonrpc": "Protocol version marker; JSON-RPC 2.0 requires the literal '2.0'.",
+        "id": "Correlation identifier pairing this response with its request.",
+        "method": "MCP operation requested from the server.",
+        "params": "Arguments supplied to the MCP operation."
+      },
+      "response_raw": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": {
+          "tools": [
+            {
+              "name": "registry_get_version",
+              "description": "Get the latest published version and release date for one package.",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "package": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "package"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "registry_get_deprecation",
+              "description": "Get the published deprecation notice for one package version.",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "package": {
+                    "type": "string"
+                  },
+                  "version": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "package",
+                  "version"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ]
+        }
+      },
+      "response_top_level_annotations": {
+        "jsonrpc": "Protocol version marker; JSON-RPC 2.0 requires the literal '2.0'.",
+        "id": "Correlation identifier pairing this response with its request.",
+        "result": "Successful JSON-RPC result payload returned by the server."
+      }
+    },
+    {
+      "phase": "tools/call",
+      "request_raw": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "tools/call",
+        "params": {
+          "name": "registry_get_version",
+          "arguments": {
+            "package": "docs-sdk"
+          }
+        }
+      },
+      "request_top_level_annotations": {
+        "jsonrpc": "Protocol version marker; JSON-RPC 2.0 requires the literal '2.0'.",
+        "id": "Correlation identifier pairing this response with its request.",
+        "method": "MCP operation requested from the server.",
+        "params": "Arguments supplied to the MCP operation."
+      },
+      "response_raw": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"isError\": false, \"package\": \"docs-sdk\", \"version\": \"3.2.0\", \"released\": \"2026-08-18\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      "response_top_level_annotations": {
+        "jsonrpc": "Protocol version marker; JSON-RPC 2.0 requires the literal '2.0'.",
+        "id": "Correlation identifier pairing this response with its request.",
+        "result": "Successful JSON-RPC result payload returned by the server."
+      }
+    }
+  ],
+  "architecture_boundary": "The model/tool-selection call happens in the MCP host (mcp_agent.py); initialize, tools/list, and tools/call execute locally between the client and servers with no model call inside either server."
+}
