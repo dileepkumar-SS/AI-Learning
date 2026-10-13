@@ -24,3 +24,19 @@ python3 trajectory_eval.py
 ```
 
 The evaluator asserts expected paths for the same ten documentation cases, accepts two legitimate orderings for the three explicitly deprecated-operation cases, reports trajectory and cost-distribution metrics, exposes an outcome-pass/trajectory-fail trace, applies exactly one mitigation, and checks every failure mode for regressions.
+
+## Week 9 MCP integration
+
+Run the configuration-driven agent against both MCP servers:
+
+```bash
+python3 mcp_agent.py
+```
+
+Regenerate the live discovery, JSON-RPC wire, zero-agent-change, config-diff, and recoverable-error evidence:
+
+```bash
+python3 week9_evidence.py
+```
+
+The host starts servers from JSON configuration, executes `initialize` and `tools/list`, and routes `tools/call` to the server that advertised the selected capability. Adding the package registry changes only `mcp_config.json`; the host does not import either server or contain a hard-coded tool list.
