@@ -40,3 +40,13 @@ python3 week9_evidence.py
 ```
 
 The host starts servers from JSON configuration, executes `initialize` and `tools/list`, and routes `tools/call` to the server that advertised the selected capability. Adding the package registry changes only `mcp_config.json`; the host does not import either server or contain a hard-coded tool list.
+
+## Week 10 single-agent vs squad race
+
+Run both arms on the same ten verbatim Week 6 cases and regenerate all evidence:
+
+```bash
+python3 multi_agent_race.py
+```
+
+The runner applies one shared binary judge, reports pass rate, p50/p99 latency, total tokens, and cost per question for both arms, logs every worker hand-off, calculates the context re-send multiplier, and performs a separate HTTP 500 failure-injection run.
