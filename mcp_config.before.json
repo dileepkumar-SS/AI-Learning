@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "docs-search": {
+      "command": "python3",
+      "args": ["docs_mcp_server.py"]
+    }
+  }
+}

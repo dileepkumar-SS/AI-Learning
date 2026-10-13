@@ -1,0 +1,7 @@
+Agent module compared: mcp_agent.py
+Before config: mcp_config.before.json (docs-search only)
+After config: mcp_config.json (docs-search + package-registry)
+Before SHA-256: 346e934ec46a6f0077c358021d0538aa4a5bb2e53e376994a3085c47078bfd81
+After SHA-256:  346e934ec46a6f0077c358021d0538aa4a5bb2e53e376994a3085c47078bfd81
+Changed agent lines: 0
+Proof: identical SHA-256 hashes; only the selected JSON config differs.
