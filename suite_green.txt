@@ -1,0 +1,13 @@
+prompt_version=docs-rag-v11.0
+PASS tr_0001 prompt=docs-rag-v11.0 contexts=v3:reference:current
+PASS tr_0002 prompt=docs-rag-v11.0 contexts=v3:reference:current
+PASS tr_0003 prompt=docs-rag-v11.0 contexts=v3:reference:current
+PASS tr_0004 prompt=docs-rag-v11.0 contexts=v3:reference:current
+PASS tr_0005 prompt=docs-rag-v11.0 contexts=v3:reference:current
+PASS tr_0006 prompt=docs-rag-v11.0 contexts=v3:reference:current
+PASS tr_0007 prompt=docs-rag-v11.0 contexts=v3:reference:current
+PASS tr_0008 prompt=docs-rag-v11.0 contexts=v3:reference:current
+PASS tr_0009 prompt=docs-rag-v11.0 contexts=v3:reference:current
+PASS tr_0010 prompt=docs-rag-v11.0 contexts=v3:reference:current
+PASS incident_deprecated_method prompt=docs-rag-v11.0 contexts=v3:client-send:reference,v3.2:migration:client-send-legacy
+RESULT 11/11

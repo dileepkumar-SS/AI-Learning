@@ -50,3 +50,13 @@ python3 multi_agent_race.py
 ```
 
 The runner applies one shared binary judge, reports pass rate, p50/p99 latency, total tokens, and cost per question for both arms, logs every worker hand-off, calculates the context re-send multiplier, and performs a separate HTTP 500 failure-injection run.
+
+## Week 11 production drill
+
+Plant the production log corpus, run the timed incident search, and regenerate the complete RED → GREEN evidence:
+
+```bash
+python3 production_drill.py
+```
+
+The command finds a deprecated-method output from last week's logs, exports its full trace, records stage-level cost, adds the incident to the ten-case Week 6 suite, preserves the failing pre-fix result, applies the retrieval policy and prompt-version bump, and records the passing full-suite result plus canary, rollback, and 10× plans.
