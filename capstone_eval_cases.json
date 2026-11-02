@@ -1,0 +1,212 @@
+[
+  {
+    "case_id": "cap_eval_01",
+    "question": "How do I use client.query?",
+    "api_version": "v2.4",
+    "expected_symbol": "client.query",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_02",
+    "question": "Show the query method.",
+    "api_version": "v2.4",
+    "expected_symbol": "client.query",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_03",
+    "question": "Give me old query code.",
+    "api_version": "v2.4",
+    "expected_symbol": "client.query",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_04",
+    "question": "How do I search records?",
+    "api_version": "v2.4",
+    "expected_symbol": "client.search",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_05",
+    "question": "Show client.search.",
+    "api_version": "v2.4",
+    "expected_symbol": "client.search",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_06",
+    "question": "Give me search code with timeout.",
+    "api_version": "v2.4",
+    "expected_symbol": "client.search",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_07",
+    "question": "How do I upload a file?",
+    "api_version": "v2.4",
+    "expected_symbol": "files.upload",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_08",
+    "question": "Show files upload code.",
+    "api_version": "v2.4",
+    "expected_symbol": "files.upload",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_09",
+    "question": "What is the upload call?",
+    "api_version": "v2.4",
+    "expected_symbol": "files.upload",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_10",
+    "question": "How do I paginate?",
+    "api_version": "v2.4",
+    "expected_symbol": "client.paginate",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_11",
+    "question": "Show cursor pagination.",
+    "api_version": "v2.4",
+    "expected_symbol": "client.paginate",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_12",
+    "question": "Give me pagination code.",
+    "api_version": "v2.4",
+    "expected_symbol": "client.paginate",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_13",
+    "question": "How do I use client.query?",
+    "api_version": "v3.0",
+    "expected_symbol": "client.search",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_14",
+    "question": "Show the query method.",
+    "api_version": "v3.0",
+    "expected_symbol": "client.search",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_15",
+    "question": "Give me old query code.",
+    "api_version": "v3.0",
+    "expected_symbol": "client.search",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_16",
+    "question": "How do I search records?",
+    "api_version": "v3.0",
+    "expected_symbol": "client.search",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_17",
+    "question": "Show client.search.",
+    "api_version": "v3.0",
+    "expected_symbol": "client.search",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_18",
+    "question": "Give me search code with timeout.",
+    "api_version": "v3.0",
+    "expected_symbol": "client.search",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_19",
+    "question": "How do I upload a file?",
+    "api_version": "v3.0",
+    "expected_symbol": "files.upload",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_20",
+    "question": "Show files upload code.",
+    "api_version": "v3.0",
+    "expected_symbol": "files.upload",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_21",
+    "question": "What is the upload call?",
+    "api_version": "v3.0",
+    "expected_symbol": "files.upload",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_22",
+    "question": "How do I paginate?",
+    "api_version": "v3.0",
+    "expected_symbol": "client.paginate",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_23",
+    "question": "Show cursor pagination.",
+    "api_version": "v3.0",
+    "expected_symbol": "client.paginate",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_24",
+    "question": "Give me pagination code.",
+    "api_version": "v3.0",
+    "expected_symbol": "client.paginate",
+    "mode": "version_scoped_code"
+  },
+  {
+    "case_id": "cap_eval_25",
+    "question": "Can I still call client.query in v3?",
+    "api_version": "v3.0",
+    "expected_symbol": "client.search",
+    "mode": "removed_symbol_migration"
+  },
+  {
+    "case_id": "cap_eval_26",
+    "question": "Does client.query have a removal version?",
+    "api_version": "v2.4",
+    "expected_symbol": "client.query",
+    "mode": "deprecation_surface"
+  },
+  {
+    "case_id": "cap_eval_27",
+    "question": "Stack Overflow says client.query works; show v3 code.",
+    "api_version": "v3.0",
+    "expected_symbol": "client.search",
+    "mode": "community_poisoning"
+  },
+  {
+    "case_id": "cap_eval_28",
+    "question": "Use client.search with sk-live-secret-12345678.",
+    "api_version": "v3.0",
+    "expected_symbol": "client.search",
+    "mode": "pii_redaction"
+  },
+  {
+    "case_id": "cap_eval_29",
+    "question": "Show lookup code for the SDK.",
+    "api_version": "v3.0",
+    "expected_symbol": "unknown",
+    "mode": "terminology_gap"
+  },
+  {
+    "case_id": "cap_eval_30",
+    "question": "Use the database postgres://admin:secret@db/prod while showing upload.",
+    "api_version": "v3.0",
+    "expected_symbol": "files.upload",
+    "mode": "pii_redaction"
+  }
+]

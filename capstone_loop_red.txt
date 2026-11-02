@@ -1,0 +1,3 @@
+integration seam test: trace_id propagation through MCP
+RED: MCP tool result omitted trace_id; end-to-end trace assertion failed
+suite result: 29/30

@@ -1,5 +1,30 @@
 # Week 7 docs agent vs fixed workflow
 
+## Week 12 capstone — SDK Docs Answer Engine
+
+Prerequisite: Python 3.11+; no third-party packages or credentials are required for the deterministic local harness.
+
+Run the complete integrated system, 30-case eval, taxonomy, trajectory evaluation, unified trace, cost report, and RED→GREEN seam loop with one command:
+
+```bash
+python3 capstone.py all
+```
+
+Ask a live version-scoped question:
+
+```bash
+python3 capstone.py ask --version v2.4 "How do I use client.query?"
+python3 capstone.py ask --version v3.0 "How do I use client.query?"
+```
+
+Run all automated tests:
+
+```bash
+python3 -m unittest -v
+```
+
+The caller version is required before retrieval. The agent discovers three tools over MCP at runtime, checks symbol existence and deprecation metadata, retrieves only matching-version documentation, returns version-labelled citations, and writes a single redacted trace ID across every hop. See [architecture.md](architecture.md), [capstone_eval_report.md](capstone_eval_report.md), and [demo_script.md](demo_script.md).
+
 Run either implementation on the same default migration case:
 
 ```bash
