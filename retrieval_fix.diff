@@ -1,0 +1,6 @@
+--- docs-rag-v10.0
++++ docs-rag-v11.0
+@@ retrieval policy
+-Rank all versioned documentation chunks by semantic similarity alone.
++When a question requests v3, exclude archived v1/v2 example chunks.
++When a deprecated symbol is detected, require the current migration chunk and include its replacement in the answer context.

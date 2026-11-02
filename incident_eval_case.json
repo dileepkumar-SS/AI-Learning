@@ -1,0 +1,5 @@
+{
+  "case_id": "incident_deprecated_method",
+  "question": "Show the v3 Python call that replaces the old send method.",
+  "expected_answer": "Use client.send(message='hello'); Client.send_legacy is deprecated and must not be used."
+}

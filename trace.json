@@ -1,0 +1,60 @@
+{
+  "answer": "```python\nclient.send_legacy(message='hello')\n```",
+  "input_type": "migration_code_sample",
+  "occurred_at": "2026-10-15T16:19:00Z",
+  "prompt_version": "docs-rag-v10.0",
+  "question": "Show the v3 Python call that replaces the old send method.",
+  "retrieved_context_ids": [
+    "v2:client-send-legacy:example",
+    "v3:migration:overview"
+  ],
+  "spans": [
+    {
+      "context_ids": [
+        "v2:client-send-legacy:example",
+        "v3:migration:overview"
+      ],
+      "cost_usd": 1.8e-05,
+      "latency_ms": 18,
+      "name": "retrieval",
+      "span_id": "sp_retrieval",
+      "tokens": {
+        "input": 108,
+        "output": 12,
+        "total": 120
+      }
+    },
+    {
+      "cost_usd": 7.2e-06,
+      "latency_ms": 12,
+      "name": "tools",
+      "span_id": "sp_tools",
+      "tokens": {
+        "input": 32,
+        "output": 16,
+        "total": 48
+      },
+      "tool_names": [
+        "search_docs",
+        "get_openapi_spec"
+      ]
+    },
+    {
+      "cost_usd": 0.000108,
+      "latency_ms": 310,
+      "name": "generation",
+      "span_id": "sp_generation",
+      "tokens": {
+        "input": 420,
+        "output": 75,
+        "total": 495
+      }
+    }
+  ],
+  "status": "ok",
+  "total_cost_usd": 0.0001332,
+  "total_latency_ms": 340,
+  "total_tokens": 663,
+  "trace_id": "prod_0037",
+  "user_id": "dev_04"
+}

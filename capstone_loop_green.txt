@@ -1,0 +1,3 @@
+fix: require trace_id in every MCP tool schema and echo it in every result
+GREEN: one trace id survives question -> agent -> MCP -> answer
+suite result: 30/30 for seam regression subset

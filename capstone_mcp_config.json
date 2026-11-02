@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "sdk-docs-capstone": {
+      "command": "python3",
+      "args": ["capstone_mcp_server.py"]
+    }
+  }
+}
